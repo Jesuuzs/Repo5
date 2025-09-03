@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analyse de la crise en France</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Le script commun charge les données du rapport et rend le contenu dynamique -->
+  <script src="script.js" defer></script>
+</head>
+<body data-page="home">
+  <header>
+    <div class="nav-wrapper">
+      <a href="index.html" class="logo" aria-label="Retour à l'accueil">
+        <img src="assets/images/logo-marianne.svg" alt="Logo Marianne" />
+      </a>
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="synthese.html">Synthèse</a></li>
+          <li><a href="graphiques.html">Graphiques</a></li>
+          <li><a href="anecdotes.html">Anecdotes</a></li>
+          <li><a href="sources.html">Sources</a></li>
+          <li><a href="a-propos.html">À&nbsp;propos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Analyse de la crise en France</h1>
+      <p class="intro">Une synthèse interactive des crises économique et sociale françaises (2017‑2025).</p>
+      <a class="cta" href="synthese.html">Consulter la synthèse</a>
+    </section>
+    <section id="key-figures" class="container">
+      <h2>Chiffres clés</h2>
+      <!-- Les cartes des chiffres clés seront insérées ici par script.js -->
+      <div id="figures-container" class="cards"></div>
+    </section>
+
+    <!-- Section des sources ajoutée automatiquement en bas de chaque page -->
+    <section id="page-sources" class="container">
+      <h2>Sources</h2>
+      <div id="page-sources-list"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Analyse de la crise en France. Données issues de sources publiques.</p>
+  </footer>
+</body>
+</html>

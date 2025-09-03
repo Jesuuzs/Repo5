@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graphiques – Analyse de la crise en France</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Charge Chart.js depuis un CDN pour dessiner les graphiques. -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body data-page="graphs">
+  <header>
+    <div class="nav-wrapper">
+      <a href="index.html" class="logo" aria-label="Retour à l'accueil">
+        <img src="assets/images/logo-marianne.svg" alt="Logo Marianne" />
+      </a>
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="synthese.html">Synthèse</a></li>
+          <li><a href="graphiques.html" class="active">Graphiques</a></li>
+          <li><a href="anecdotes.html">Anecdotes</a></li>
+          <li><a href="sources.html">Sources</a></li>
+          <li><a href="a-propos.html">À&nbsp;propos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="container">
+      <h1>Graphiques</h1>
+      <p>Les graphiques ci‑dessous visualisent quelques indicateurs clés issus du rapport. Passez la souris sur les points pour voir les valeurs.</p>
+      <div id="charts-container" class="graphs"></div>
+      <!-- Section des sources pour cette page -->
+      <section id="page-sources" class="sources-section">
+        <h2>Sources</h2>
+        <div id="page-sources-list"></div>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Analyse de la crise en France.</p>
+  </footer>
+</body>
+</html>

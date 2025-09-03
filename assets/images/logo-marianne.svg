@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <!-- Gradient reminiscent of the French flag: blue to white to red -->
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0055A4" />
+      <stop offset="50%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#EF4135" />
+    </linearGradient>
+  </defs>
+  <!-- Outer circle framing the Marianne logo -->
+  <circle cx="50" cy="50" r="48" fill="url(#grad)" />
+  <!-- Stylised silhouette hinting at Marianne's profile. This abstract shape
+       suggests a face and hair without reproducing any official emblem. -->
+  <path d="M35 65 Q50 25 65 65 Q50 50 35 65 Z" fill="rgba(255,255,255,0.8)" />
+</svg>

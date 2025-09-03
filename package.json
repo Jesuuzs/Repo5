@@ -1,0 +1,14 @@
+{
+  "name": "analyse-crise-france-static",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "extract": "node scripts/extract-pdf.mjs input/input.pdf > public/data/raw.json",
+    "postprocess": "node scripts/postprocess.mjs public/data/raw.json public/data/report.json"
+  },
+  "dependencies": {
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^3.9.179"
+  }
+}

@@ -1,0 +1,407 @@
+{
+  "meta": {
+    "titre": "Analyse PDF — Crise en France",
+    "maj": "2025-09-02",
+    "source_pdf": "input.pdf",
+    "version": 1
+  },
+  "chiffres_cles": [
+    {
+      "intitule": "Inflation totale (juillet 2025)",
+      "valeur": 1.0,
+      "unite": "%",
+      "periode": "2025-07",
+      "source": "INSEE",
+      "url": "https://www.insee.fr/fr/statistiques/8630006"
+    },
+    {
+      "intitule": "Inflation sous-jacente (juin 2025)",
+      "valeur": 1.2,
+      "unite": "%",
+      "periode": "2025-06",
+      "source": "Métadonnées",
+      "url": "input.pdf"
+    },
+    {
+      "intitule": "Croissance du PIB (2025)",
+      "valeur": 0.6,
+      "unite": "%",
+      "periode": "2025",
+      "source": "Métadonnées",
+      "url": "input.pdf"
+    },
+    {
+      "intitule": "Taux de chômage (2025)",
+      "valeur": 7.5,
+      "unite": "%",
+      "periode": "2025",
+      "source": "INSEE",
+      "url": "https://www.insee.fr/fr/statistiques/8627586"
+    },
+    {
+      "intitule": "Dette publique (2025)",
+      "valeur": 115,
+      "unite": "% du PIB",
+      "periode": "2025",
+      "source": "Métadonnées",
+      "url": "input.pdf"
+    }
+    ,
+    {
+      "intitule": "Déficit public (2025)",
+      "valeur": 5,
+      "unite": "% du PIB",
+      "periode": "2025",
+      "source": "Métadonnées",
+      "url": "input.pdf"
+    },
+    {
+      "intitule": "Taux de pauvreté (2025)",
+      "valeur": 14.1,
+      "unite": "%",
+      "periode": "2025",
+      "source": "Métadonnées",
+      "url": "input.pdf"
+    }
+  ],
+  "indicateurs": [
+    {
+      "id": "pib_croissance",
+      "label": "Croissance du PIB",
+      "unite": "%",
+      "series": [
+        { "date": "2019", "val": 1.8 },
+        { "date": "2020", "val": -7.4 },
+        { "date": "2021", "val": 6.9 },
+        { "date": "2022", "val": 2.7 },
+        { "date": "2023", "val": 1.4 },
+        { "date": "2024", "val": 1.1 },
+        { "date": "2025", "val": 0.6 }
+      ],
+      "source": "Métadonnées",
+      "url": "input.pdf"
+    },
+    {
+      "id": "inflation_totale",
+      "label": "Inflation totale",
+      "unite": "%",
+      "series": [
+        { "date": "2019", "val": 1.3 },
+        { "date": "2020", "val": 0.5 },
+        { "date": "2021", "val": 1.5 },
+        { "date": "2022", "val": 6.0 },
+        { "date": "2023", "val": 5.0 },
+        { "date": "2024", "val": 1.5 },
+        { "date": "2025", "val": 1.0 }
+      ],
+      "source": "INSEE",
+      "url": "https://www.insee.fr/fr/statistiques/8630006"
+    },
+    {
+      "id": "inflation_core",
+      "label": "Inflation sous-jacente",
+      "unite": "%",
+      "series": [
+        { "date": "2019", "val": 1.0 },
+        { "date": "2020", "val": 0.7 },
+        { "date": "2021", "val": 1.5 },
+        { "date": "2022", "val": 5.5 },
+        { "date": "2023", "val": 5.5 },
+        { "date": "2024", "val": 2.0 },
+        { "date": "2025", "val": 1.2 }
+      ],
+      "source": "Métadonnées",
+      "url": "input.pdf"
+    },
+    {
+      "id": "unemployment",
+      "label": "Taux de chômage",
+      "unite": "%",
+      "series": [
+        { "date": "2019", "val": 8.5 },
+        { "date": "2020", "val": 8.0 },
+        { "date": "2021", "val": 8.0 },
+        { "date": "2022", "val": 8.0 },
+        { "date": "2023", "val": 7.3 },
+        { "date": "2024", "val": 7.2 },
+        { "date": "2025", "val": 7.5 }
+      ],
+      "source": "INSEE",
+      "url": "https://www.insee.fr/fr/statistiques/8627586"
+    },
+    {
+      "id": "public_debt",
+      "label": "Dette publique",
+      "unite": "% du PIB",
+      "series": [
+        { "date": "2019", "val": 98 },
+        { "date": "2020", "val": 115 },
+        { "date": "2021", "val": 112 },
+        { "date": "2022", "val": 111 },
+        { "date": "2023", "val": 113 },
+        { "date": "2024", "val": 115 },
+        { "date": "2025", "val": 115 }
+      ],
+      "source": "Métadonnées",
+      "url": "input.pdf"
+    },
+    {
+      "id": "public_deficit",
+      "label": "Déficit public",
+      "unite": "% du PIB",
+      "series": [
+        { "date": "2017", "val": -3.0 },
+        { "date": "2018", "val": -2.8 },
+        { "date": "2019", "val": -3.1 },
+        { "date": "2020", "val": -9.0 },
+        { "date": "2021", "val": -6.0 },
+        { "date": "2022", "val": -5.0 },
+        { "date": "2023", "val": -5.5 },
+        { "date": "2024", "val": -5.0 },
+        { "date": "2025", "val": -5.0 }
+      ],
+      "source": "Métadonnées",
+      "url": "input.pdf"
+    },
+    {
+      "id": "poverty_rate",
+      "label": "Taux de pauvreté",
+      "unite": "%",
+      "series": [
+        { "date": "2019", "val": 13.0 },
+        { "date": "2020", "val": 14.0 },
+        { "date": "2021", "val": 14.6 },
+        { "date": "2022", "val": 14.4 },
+        { "date": "2023", "val": 14.0 },
+        { "date": "2024", "val": 13.8 },
+        { "date": "2025", "val": 14.1 }
+      ],
+      "source": "Métadonnées",
+      "url": "input.pdf"
+    },
+    {
+      "id": "gini_index",
+      "label": "Indice de Gini",
+      "unite": "",
+      "series": [
+        { "date": "2019", "val": 0.29 },
+        { "date": "2020", "val": 0.293 },
+        { "date": "2021", "val": 0.295 },
+        { "date": "2022", "val": 0.295 },
+        { "date": "2023", "val": 0.297 },
+        { "date": "2024", "val": 0.296 },
+        { "date": "2025", "val": 0.298 }
+      ],
+      "source": "Métadonnées",
+      "url": "input.pdf"
+    }
+  ],
+  "faits": [
+    {
+      "date": "2018-11",
+      "texte": "Début du mouvement des Gilets jaunes, contestation fiscale et sociale de grande ampleur en France.",
+      "categorie": "social",
+      "source": "Presse",
+      "url": "https://fr.wikipedia.org/wiki/Mouvement_des_Gilets_jaunes"
+    },
+    {
+      "date": "2020-03",
+      "texte": "Confinement national lié à la pandémie de Covid-19 provoquant une chute du PIB de –7,4 % en 2020.",
+      "categorie": "santé",
+      "source": "Métadonnées",
+      "url": "input.pdf"
+    },
+    {
+      "date": "2023-03",
+      "texte": "Poursuite de l’inflation à plus de 5 % et contestation de la réforme des retraites en 2023.",
+      "categorie": "politique",
+      "source": "Le Monde",
+      "url": "https://www.lemonde.fr/politique/article/2025/09/01/la-cgt-appelle-la-fonction-publique-a-la-greve-les-10-et-18-septembre_6638031_823448.html"
+    },
+    {
+      "date": "2025-09-02",
+      "texte": "Appels au blocage le 10 septembre et journées de grève le 18 septembre 2025, dans un climat de tension sociale.",
+      "categorie": "social",
+      "source": "La Dépêche",
+      "url": "https://www.ladepeche.fr/2025/09/02/bloquons-tout-transports-ecole-s-services-publics-a-quoi-faut-il-sattendre-pour-les-journees-de-mobilisation-des-10-et-18-septembre-en-france-12904430.php"
+    }
+  ],
+  "anecdotes": [
+    {
+      "titre": "Inflation sous-jacente en baisse",
+      "texte": "Après avoir culminé autour de 5–6 % en 2023, l’inflation sous-jacente (hors énergie/alimentation) est retombée à +1,2 % sur un an en juin 2025【752734018438435†L38-L47】. Cette normalisation des prix de l’énergie soulage temporairement les ménages, même si l’inflation totale reste d’environ 1 %【752734018438435†L100-L104】. L’enjeu reste la volatilité future des cours du pétrole et du gaz, qui pourrait relancer l’inflation et rogner la croissance.",
+      "source": "Métadonnées",
+      "url": "input.pdf",
+      "date": "2025-06-30"
+    },
+    {
+      "titre": "Chômage historiquement bas",
+      "texte": "Fin 2023, le taux de chômage en France est redescendu autour de 7,3 % – son niveau le plus bas depuis quarante ans【752734018438435†L48-L52】. Malgré cette amélioration, le taux d’emploi (69 %) reste inférieur à celui d’autres pays européens【752734018438435†L48-L52】. Avec la conjoncture morose, la Banque de France anticipe un léger rebond du chômage vers 7,5 % en 2025【752734018438435†L100-L107】. Les jeunes et les travailleurs précaires demeurent les plus exposés.",
+      "source": "Métadonnées",
+      "url": "input.pdf",
+      "date": "2023-12-31"
+    },
+    {
+      "titre": "Dette publique en hausse",
+      "texte": "La dette publique française est passée de 98 % du PIB en 2019 à environ 111 % en 2022, et devrait atteindre 115 % en 2025【752734018438435†L52-L55】. Ce niveau historique interroge la soutenabilité à moyen terme alors que le déficit public reste élevé (5,5 % du PIB en 2023 et environ 5 % prévu en 2024【752734018438435†L55-L58】【752734018438435†L108-L110】). Une consolidation budgétaire est nécessaire pour revenir sous le seuil de 3 % d’ici 2027.",
+      "source": "Métadonnées",
+      "url": "input.pdf",
+      "date": "2025-01-01"
+    },
+    {
+      "titre": "Pauvreté et inégalités persistantes",
+      "texte": "Les ménages modestes ont subi de plein fouet l’inflation, avec un bond des prix alimentaires de +11 % en 2022 et un pouvoir d’achat moyen en recul de –0,3 %【752734018438435†L60-L67】. Le taux de pauvreté reste élevé à 14,4 % en 2022 et l’indice de Gini atteint 0,297 en 2023, quasi record depuis plus de deux décennies【752734018438435†L68-L71】. Ces chiffres illustrent des inégalités territoriales marquées et des poches de pauvreté en banlieue【752734018438435†L90-L96】.",
+      "source": "Métadonnées",
+      "url": "input.pdf",
+      "date": "2023-12-31"
+    }
+  ],
+  "graphes": [
+    {
+      "id": "pib_croissance",
+      "type": "line",
+      "x": "date",
+      "y": "val",
+      "serieRef": "indicateurs:pib_croissance",
+      "annotations": [
+        { "x": "2020", "label": "Pandémie Covid-19" },
+        { "x": "2021", "label": "Rebond post-Covid" }
+      ],
+      "note": "Croissance du PIB en volume (variations annuelles)."
+    },
+    {
+      "id": "inflation_totale",
+      "type": "line",
+      "x": "date",
+      "y": "val",
+      "serieRef": "indicateurs:inflation_totale",
+      "annotations": [
+        { "x": "2022", "label": "Crise énergétique" },
+        { "x": "2025", "label": "Normalisation des prix" }
+      ],
+      "note": "Inflation totale sur un an, toutes dépenses confondues."
+    },
+    {
+      "id": "inflation_core",
+      "type": "line",
+      "x": "date",
+      "y": "val",
+      "serieRef": "indicateurs:inflation_core",
+      "annotations": [
+        { "x": "2023", "label": "Pic 5–6 %" },
+        { "x": "2025", "label": "Retour vers 1 %" }
+      ],
+      "note": "Inflation sous-jacente hors énergie et alimentation."
+    },
+    {
+      "id": "unemployment",
+      "type": "line",
+      "x": "date",
+      "y": "val",
+      "serieRef": "indicateurs:unemployment",
+      "annotations": [
+        { "x": "2023", "label": "Niveau historiquement bas" },
+        { "x": "2025", "label": "Rebond attendu" }
+      ],
+      "note": "Taux de chômage selon l’INSEE."
+    },
+    {
+      "id": "public_debt",
+      "type": "line",
+      "x": "date",
+      "y": "val",
+      "serieRef": "indicateurs:public_debt",
+      "annotations": [
+        { "x": "2020", "label": "Quoi qu’il en coûte" },
+        { "x": "2025", "label": "Seuil 115 %" }
+      ],
+      "note": "Dette publique brute rapportée au PIB."
+    },
+    {
+      "id": "public_deficit",
+      "type": "line",
+      "x": "date",
+      "y": "val",
+      "serieRef": "indicateurs:public_deficit",
+      "annotations": [
+        { "x": "2020", "label": "Déficit record" },
+        { "x": "2023", "label": "5,5 %" }
+      ],
+      "note": "Solde public annuel (négatif = déficit) rapporté au PIB."
+    },
+    {
+      "id": "poverty_rate",
+      "type": "line",
+      "x": "date",
+      "y": "val",
+      "serieRef": "indicateurs:poverty_rate",
+      "annotations": [
+        { "x": "2022", "label": "Pic 14,4 %" },
+        { "x": "2025", "label": "Prévisions" }
+      ],
+      "note": "Proportion de la population vivant sous le seuil de pauvreté."
+    },
+    {
+      "id": "gini_index",
+      "type": "line",
+      "x": "date",
+      "y": "val",
+      "serieRef": "indicateurs:gini_index",
+      "annotations": [
+        { "x": "2023", "label": "Indice 0,297" }
+      ],
+      "note": "Indice de Gini mesurant les inégalités de revenus."
+    }
+  ],
+  "sources": [
+    {
+      "type": "presse",
+      "media": "La Dépêche",
+      "titre": "Bloquons tout : transports, écoles, services publics … ce qu’il faut attendre des journées de mobilisation des 10 et 18 septembre en France",
+      "date": "2025-09-02",
+      "url": "https://www.ladepeche.fr/2025/09/02/bloquons-tout-transports-ecole-s-services-publics-a-quoi-faut-il-sattendre-pour-les-journees-de-mobilisation-des-10-et-18-septembre-en-france-12904430.php"
+    },
+    {
+      "type": "presse",
+      "media": "Le Monde",
+      "titre": "La CGT appelle la fonction publique à la grève les 10 et 18 septembre",
+      "date": "2025-09-01",
+      "url": "https://www.lemonde.fr/politique/article/2025/09/01/la-cgt-appelle-la-fonction-publique-a-la-greve-les-10-et-18-septembre_6638031_823448.html"
+    },
+    {
+      "type": "presse",
+      "media": "Reuters",
+      "titre": "Staff at France's EDF plan three-day strike starting September 1",
+      "date": "2025-08-30",
+      "url": "https://www.reuters.com/sustainability/sustainable-finance-reporting/staff-frances-edf-plan-three-day-strike-september-1-2025-08-30/"
+    },
+    {
+      "type": "presse",
+      "media": "BFMTV",
+      "titre": "Bloquons tout : d’où vient le mouvement du 10 septembre ?",
+      "date": "2025-09-02",
+      "url": "https://www.bfmtv.com/tech/actualites/reseaux-sociaux/anciens-gilets-jaunes-complotistes-et-france-insoumise-d-ou-vient-le-mouvement-du-bloquons-tout-du-10-septembre_AV-20250902-0140.html"
+    },
+    {
+      "type": "institution",
+      "media": "INSEE",
+      "titre": "En juillet 2025, les prix à la consommation augmentent de 0,2 % sur un mois et de 1,0 % sur un an",
+      "date": "2025-07-31",
+      "url": "https://www.insee.fr/fr/statistiques/8630006"
+    },
+    {
+      "type": "institution",
+      "media": "INSEE",
+      "titre": "Statistiques emploi / chômage (T2 2025)",
+      "date": "2025-08-15",
+      "url": "https://www.insee.fr/fr/statistiques/8627586"
+    },
+    {
+      "type": "institution",
+      "media": "Métadonnées",
+      "titre": "Métadonnées – Crises en France (2017-2025)",
+      "date": "2025-09-01",
+      "url": "input.pdf"
+    }
+  ]
+}

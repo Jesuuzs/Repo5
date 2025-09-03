@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À&nbsp;propos – Analyse de la crise en France</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="apropos">
+  <header>
+    <div class="nav-wrapper">
+      <a href="index.html" class="logo" aria-label="Retour à l'accueil">
+        <img src="assets/images/logo-marianne.svg" alt="Logo Marianne" />
+      </a>
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="synthese.html">Synthèse</a></li>
+          <li><a href="graphiques.html">Graphiques</a></li>
+          <li><a href="anecdotes.html">Anecdotes</a></li>
+          <li><a href="sources.html">Sources</a></li>
+          <li><a href="a-propos.html" class="active">À&nbsp;propos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="container">
+      <h1>À&nbsp;propos</h1>
+      <p>Ce site web est un projet pédagogique visant à explorer et synthétiser des données économiques et sociales à partir d’un document PDF. Aucune information personnelle n’est collectée et toutes les données proviennent de sources publiques (INSEE, presse, etc.).</p>
+      <h2>Méthodologie d’extraction</h2>
+      <p>Les textes et tableaux du PDF sont extraits automatiquement à l’aide des bibliothèques <code>pdf-parse</code> et <code>pdfjs-dist</code> dans un environnement Node.js. Le résultat brut est ensuite nettoyé et normalisé en un fichier JSON structuré (<code>public/data/report.json</code>) qui alimente l’interface.</p>
+      <h2>Limitations</h2>
+      <p>L’extraction automatique peut comporter des erreurs, notamment sur les tableaux complexes et les notes de bas de page. Les chiffres présentés sont indicatifs : veillez à consulter les sources originales pour un usage professionnel.</p>
+      <h2>Accessibilité et performance</h2>
+      <p>L’interface est conçue pour être lisible et accessible (navigation clavier, contrastes suffisants). Aucune librairie de composants lourde n’est utilisée afin de garantir un chargement rapide. Les graphiques sont rendus avec Chart.js via un CDN.</p>
+      <!-- Section des sources pour cette page -->
+      <section id="page-sources" class="sources-section">
+        <h2>Sources</h2>
+        <div id="page-sources-list"></div>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Analyse de la crise en France.</p>
+  </footer>
+</body>
+</html>
